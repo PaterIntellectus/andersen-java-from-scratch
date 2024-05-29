@@ -11,4 +11,3 @@ public class HelloWorld {
         System.out.printf("Hello %s\n", name);
     }
 }
-

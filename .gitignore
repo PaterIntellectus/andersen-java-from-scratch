@@ -3,8 +3,6 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Whole Idea folder ###
-.idea
 
 ### Eclipse ###
 .apt_generated

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="669fa62e-08ce-41e0-9058-648ef358e89a" name="Changes" comment="Hello World program">
-      <change afterPath="$PROJECT_DIR$/recourses/screenshots/Hello World execution.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="669fa62e-08ce-41e0-9058-648ef358e89a" name="Changes" comment="Second Homework&#10;&#10;Completed all the main and additional requirements">
+      <change afterPath="$PROJECT_DIR$/src/com/andersen/TicketService/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/andersen/TicketService/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/andersen/HelloWorld/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/andersen/HelloWorld/HelloWorld.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PaterIntellectus"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PaterIntellectus&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PaterIntellectus/andersen-java-from-scratch",
-    "accountId": "a80d1d64-e6dd-4e40-b06b-d45ccc1838e8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PaterIntellectus/andersen-java-from-scratch&quot;,
+    &quot;accountId&quot;: &quot;a80d1d64-e6dd-4e40-b06b-d45ccc1838e8&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2h9BctWrUgUqWcFeSdw2qAU5Ud3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,6 +48,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloWorld.executor": "Run",
+    "Application.TicketService.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -94,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716997149333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hello World execution screenshots&#10;- remove .idea path from gitignore&#10;- add screenshots of compilation and execution of HelloWorld class from PowerShell">
+      <option name="closed" value="true" />
+      <created>1716997652777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716997652777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Hello World program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello World program" />
+    <MESSAGE value="Hello World execution screenshots&#10;- remove .idea path from gitignore&#10;- add screenshots of compilation and execution of HelloWorld class from PowerShell" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello World execution screenshots&#10;- remove .idea path from gitignore&#10;- add screenshots of compilation and execution of HelloWorld class from PowerShell" />
   </component>
 </project>

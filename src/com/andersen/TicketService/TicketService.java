@@ -18,4 +18,16 @@ public class TicketService {
         System.out.println("Full   : " + fullTicket);
         System.out.println("Limited: " + limitedTicket);
     }
+
+    public static Ticket getTicketByStadiumSector(Ticket[] tickets, Ticket.StadiumSector stadiumSector){
+        int foundIndex = 0;
+        for(int i=0; i<tickets.length; i++){
+            if(tickets[i].getStadiumSector() == stadiumSector){
+                System.out.println("ticket.id["+i+"]="+tickets[i].getId()+", stadiumSector="+tickets[i].getStadiumSector());
+                foundIndex = i;
+                break;
+            }
+        }
+        return tickets[foundIndex];
+    }
 }

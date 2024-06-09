@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="669fa62e-08ce-41e0-9058-648ef358e89a" name="Changes" comment="Second Homework&#10;&#10;Completed all the main and additional requirements">
-      <change afterPath="$PROJECT_DIR$/src/com/andersen/TicketService/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/andersen/TicketService/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/andersen/TicketService/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/andersen/TicketService/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "JFB-3-merge-conflict-from-mamyr",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "S:/Development/java/andersen-java-from-scratch/recourses/screenshots",

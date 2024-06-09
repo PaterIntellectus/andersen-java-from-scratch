@@ -52,7 +52,7 @@ public class Ticket {
         return ID;
     }
 
-    public void setId(String ID) {
+    private void setId(String ID) {
         if (ID == null || ID.length() > 4) {
             throw new IllegalArgumentException("Id must be at most 4 characters long.");
         }
@@ -64,7 +64,7 @@ public class Ticket {
         return concertHall;
     }
 
-    public void setConcertHall(String concertHall) {
+    private void setConcertHall(String concertHall) {
         if (concertHall == null || concertHall.length() > 10) {
             throw new IllegalArgumentException("Concert hall must be at most 10 characters long.");
         }
@@ -76,7 +76,7 @@ public class Ticket {
         return eventCode;
     }
 
-    public void setEventCode(String eventCode) {
+    private void setEventCode(String eventCode) {
         if (eventCode == null || !eventCode.matches("\\d{3}")) {
             throw new IllegalArgumentException("Event code must be 3 digits long, and contain ONLY digits.");
         }
@@ -96,7 +96,7 @@ public class Ticket {
         return isPromo;
     }
 
-    public void setIsPromo(boolean promo) {
+    private void setIsPromo(boolean promo) {
         isPromo = promo;
     }
 
@@ -112,7 +112,7 @@ public class Ticket {
         return maxBackpackWeight;
     }
 
-    public void setMaxBackpackWeight(double maxBackpackWeight) {
+    private void setMaxBackpackWeight(double maxBackpackWeight) {
         this.maxBackpackWeight = maxBackpackWeight;
     }
 
@@ -120,7 +120,7 @@ public class Ticket {
         return price;
     }
 
-    public void setPrice(double price) {
+    private void setPrice(double price) {
         this.price = price;
     }
 
@@ -131,9 +131,9 @@ public class Ticket {
     @Override
     public String toString() {
         return String.format(
-                "[id = %s, concertHall = %s, eventCode = %s, " +
+                "Ticket(id = %s, concertHall = %s, eventCode = %s, " +
                         "time = %s, isPromo = %s, stadiumSector = %s, " +
-                        "maxBackpackWeight = %.1f, price = %.2f]",
+                        "maxBackpackWeight = %.1f, price = %.2f)",
                 getId(),
                 getConcertHall(),
                 getEventCode(),

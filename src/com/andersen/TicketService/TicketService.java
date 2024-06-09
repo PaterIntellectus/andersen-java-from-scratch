@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class TicketService {
     public static void main(String[] args) {
-        final ArrayList<Ticket> ticketStorage = new ArrayList<Ticket>(10);
+        final var ticketStorage = new ArrayList<Ticket>(10);
 
         ticketStorage.add(new Ticket());
         ticketStorage.get(0).setId("null");

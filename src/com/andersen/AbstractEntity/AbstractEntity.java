@@ -3,7 +3,7 @@ package com.andersen.AbstractEntity;
 abstract public class AbstractEntity {
     private int id;
 
-    AbstractEntity(int id) {
+    public AbstractEntity(int id) {
         this.id = id;
     }
 

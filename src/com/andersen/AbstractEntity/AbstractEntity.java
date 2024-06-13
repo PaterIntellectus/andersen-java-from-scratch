@@ -14,8 +14,4 @@ abstract public class AbstractEntity {
     public void setId(int id) {
         this.id = id;
     }
-
-    public void print() {
-        System.out.printf("AbstractClass(id = %d)", id);
-    }
 }

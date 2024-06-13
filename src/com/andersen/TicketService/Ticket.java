@@ -1,14 +1,17 @@
 package com.andersen.TicketService;
 
+import com.andersen.AbstractEntity.AbstractEntity;
+import com.andersen.Interfaces.Printable;
+import com.andersen.Interfaces.Shareable;
+
 import java.sql.Timestamp;
 
-public class Ticket {
+public class Ticket extends AbstractEntity implements Printable, Shareable  {
     public enum StadiumSector {
         A, B, C
     }
 
 
-    private String ID; // max 4 digits/characters
     private String concertHall; // 10 characters
     private String eventCode; // 3 digits
     private Timestamp time;
@@ -19,11 +22,11 @@ public class Ticket {
 
 
     public Ticket() {
-
+        super();
     }
 
     public Ticket(
-            String id,
+            int id,
             String concertHall,
             String eventCode,
             boolean isPromo,
@@ -31,7 +34,8 @@ public class Ticket {
             double maxBackpackWeight,
             double price
     ) {
-        setId(id);
+        super(id);
+
         setConcertHall(concertHall);
         setEventCode(eventCode);
         setCurrentTime();
@@ -42,22 +46,11 @@ public class Ticket {
     }
 
     public Ticket(String concertHall, String eventCode) {
+        super(0);
+
         setConcertHall(concertHall);
         setEventCode(eventCode);
         setCurrentTime();
-    }
-
-
-    public String getId() {
-        return ID;
-    }
-
-    private void setId(String ID) {
-        if (ID == null || ID.length() > 4) {
-            throw new IllegalArgumentException("Id must be at most 4 characters long.");
-        }
-
-        this.ID = ID;
     }
 
     public String getConcertHall() {
@@ -128,6 +121,7 @@ public class Ticket {
         setTime(new Timestamp(System.currentTimeMillis()));
     }
 
+
     @Override
     public String toString() {
         return String.format(
@@ -143,5 +137,10 @@ public class Ticket {
                 getMaxBackpackWeight(),
                 getPrice()
         );
+    }
+
+    @Override
+    public void print() {
+        System.out.println(this);
     }
 }

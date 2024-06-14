@@ -9,15 +9,15 @@ public class TicketService {
         final var ticketStorage = new ArrayList<Ticket>(10);
 
         ticketStorage.add(new Ticket());
-        ticketStorage.add(new Ticket("R2D2", "SW Hall #1", "327", false, Ticket.StadiumSector.A, 12, 49.90));
-        ticketStorage.add(new Ticket("GHA4", "SW Hall #1", "327", false, Ticket.StadiumSector.B, 8, 29.90));
+        ticketStorage.add(new Ticket(1, "SW Hall #1", "327", false, Ticket.StadiumSector.A, 12, 49.90));
+        ticketStorage.add(new Ticket(2, "SW Hall #1", "327", false, Ticket.StadiumSector.B, 8, 29.90));
         ticketStorage.add(new Ticket("Opera Hall", "419"));
-        ticketStorage.add(new Ticket("GH2K", "SW Hall #2", "327", false, Ticket.StadiumSector.C, 4, 12.90));
+        ticketStorage.add(new Ticket(3, "SW Hall #2", "327", false, Ticket.StadiumSector.C, 4, 12.90));
 
-        ticketStorage.add(new Ticket("5TFU", "SW Hall #1", "327", false, Ticket.StadiumSector.A, 12, 49.90));
+        ticketStorage.add(new Ticket(4, "SW Hall #1", "327", false, Ticket.StadiumSector.A, 12, 49.90));
         ticketStorage.add(new Ticket("Opera Hall", "419"));
         ticketStorage.add(new Ticket());
-        ticketStorage.add(new Ticket("LK89", "SW Hall #2", "327", false, Ticket.StadiumSector.C, 4, 12.90));
+        ticketStorage.add(new Ticket(5, "SW Hall #2", "327", false, Ticket.StadiumSector.C, 4, 12.90));
         ticketStorage.add(new Ticket());
 
         System.out.println("Ticket Storage:");
@@ -32,9 +32,9 @@ public class TicketService {
         System.out.printf("Ticket with id = 'null': %s\n", getTicketByID(ticketStorage, null));
     }
 
-    static Ticket getTicketByID(Collection<Ticket> ticketStorage, String id) {
+    static Ticket getTicketByID(Collection<Ticket> ticketStorage, int id) {
         for (final var ticket : ticketStorage) {
-            if (ticket.getId() != null && ticket.getId().equals(id)) {
+            if (ticket.getId() != 0 && ticket.getId() == id) {
                 return ticket;
             } else {
                 if (Objects.equals(ticket.getId(), id)) {

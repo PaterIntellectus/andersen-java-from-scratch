@@ -137,7 +137,11 @@ public class Ticket extends AbstractEntity implements Printable, Shareable  {
             return true;
         }
 
-        final Ticket other = (Ticket) obj;
+        if (!super.equals(obj)) {
+            return false;
+        }
+
+        final var other = (Ticket) obj;
 
         return
                 super.equals(obj) &&

@@ -9,11 +9,11 @@ public class Admin extends User {
 
     @Override
     public void printRole() {
-        System.out.printf("%d is a Admin\n", getId());
+        System.out.printf("%s is an Admin\n", getName());
     }
 
     void checkTicket(Ticket ticket) {
         System.out.printf("Ticket '%d' checked:\n", ticket.getId());
-        System.out.printf("This ticket is %s promo ticket!\n", ticket.getIsPromo() ?"" : "not");
+        System.out.printf("This ticket is%s promo ticket!\n", ticket.getIsPromo() ?"" : " not");
     }
 }

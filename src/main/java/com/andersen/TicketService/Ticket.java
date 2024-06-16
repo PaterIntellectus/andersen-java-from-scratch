@@ -5,6 +5,7 @@ import com.andersen.Interfaces.Printable;
 import com.andersen.Interfaces.Shareable;
 
 import java.sql.Timestamp;
+import java.util.Objects;
 
 public class Ticket extends AbstractEntity implements Printable, Shareable  {
     public enum StadiumSector {
@@ -121,6 +122,47 @@ public class Ticket extends AbstractEntity implements Printable, Shareable  {
         setTime(new Timestamp(System.currentTimeMillis()));
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+
+        if (!(obj instanceof Ticket)) {
+            return false;
+        }
+
+        if (obj == this) {
+            return true;
+        }
+
+        final Ticket other = (Ticket) obj;
+
+        return
+                super.equals(obj) &&
+                this.getConcertHall().equals(other.getConcertHall()) &&
+                this.getEventCode().equals(other.getEventCode()) &&
+                this.getTime().equals(other.getTime()) &&
+                this.getIsPromo() == other.getIsPromo() &&
+                this.getStadiumSector().equals(other.getStadiumSector()) &&
+                Double.compare(this.getMaxBackpackWeight(), other.getMaxBackpackWeight()) == 0 &&
+                Double.compare(this.getPrice(), other.getPrice()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+                super.hashCode(),
+                getConcertHall().hashCode(),
+                getEventCode().hashCode(),
+                getTime().hashCode(),
+                Boolean.hashCode(getIsPromo()),
+                getStadiumSector().hashCode(),
+                Double.hashCode(getMaxBackpackWeight()),
+                Double.hashCode(getPrice())
+        );
+    }
 
     @Override
     public String toString() {

@@ -1,8 +1,5 @@
-package com.andersen.user;
+package com.andersen.users;
 
-import com.andersen.users.Admin;
-import com.andersen.users.Client;
-import com.andersen.users.User;
 import com.andersen.concert_tickets.Ticket;
 
 import java.util.ArrayList;

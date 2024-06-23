@@ -1,6 +1,6 @@
 package com.andersen.concert_tickets;
 
-import com.andersen.AbstractEntity.AbstractEntity;
+import com.andersen.core.AbstractEntity;
 import com.andersen.utils.Printable;
 import com.andersen.utils.Shareable;
 

@@ -1,5 +1,8 @@
-package com.andersen.User;
+package com.andersen.user;
 
+import com.andersen.users.Admin;
+import com.andersen.users.Client;
+import com.andersen.users.User;
 import com.andersen.concert_tickets.Ticket;
 
 import java.util.ArrayList;
@@ -48,7 +51,5 @@ public class UserTest {
                 }
             }
         }
-
-
     }
 }

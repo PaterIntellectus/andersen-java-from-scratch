@@ -1,4 +1,4 @@
-package com.andersen.User;
+package com.andersen.users;
 
 import com.andersen.concert_tickets.Ticket;
 

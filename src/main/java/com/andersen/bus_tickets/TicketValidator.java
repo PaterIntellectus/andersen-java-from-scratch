@@ -1,4 +1,4 @@
-package com.andersen.BusTicketValidator;
+package com.andersen.bus_tickets;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

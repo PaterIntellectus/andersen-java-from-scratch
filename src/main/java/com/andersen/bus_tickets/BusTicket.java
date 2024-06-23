@@ -1,4 +1,4 @@
-package com.andersen.BusTicketValidator;
+package com.andersen.bus_tickets;
 
 public class BusTicket {
     private String ticketClass;

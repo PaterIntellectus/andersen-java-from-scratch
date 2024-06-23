@@ -1,4 +1,4 @@
-package com.andersen.HelloWorld;
+package com.andersen;
 
 public class HelloWorld {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.andersen.Interfaces;
+package com.andersen.utils;
 
 public interface Printable {
     default void print() {

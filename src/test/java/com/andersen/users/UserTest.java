@@ -1,22 +1,25 @@
-package com.andersen.User;
+package com.andersen.users;
 
-import com.andersen.TicketService.Ticket;
+import com.andersen.concert_tickets.Ticket;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class UserTest {
     public static void main(String[] args) {
-        final var tickets = new ArrayList<Ticket>(3);
-        tickets.add(new Ticket(1, "SW Hall #1", "327", false, Ticket.StadiumSector.C, 12, 49.99));
-        tickets.add(new Ticket(2, "SW Hall #2", "321", true, Ticket.StadiumSector.A, 15, 14.99));
-        tickets.add(new Ticket(3, "SW Hall #1", "327", false, Ticket.StadiumSector.B, 12, 49.99));
+        final var tickets = new ArrayList<Ticket>(Arrays.asList(
+                new Ticket(1, "SW Hall #1", "327", false, Ticket.StadiumSector.C, 12, 49.99),
+                new Ticket(2, "SW Hall #2", "321", true, Ticket.StadiumSector.A, 15, 14.99),
+                new Ticket(3, "SW Hall #1", "327", false, Ticket.StadiumSector.B, 12, 49.99)
+        ));
 
 
-        final var users = new ArrayList<User>(4);
-        users.add(new Client(2, "Malcolm", tickets.get(0)));
-        users.add(new Client( 3, "Linda", tickets.get(1)));
-        users.add(new Admin(1, "John"));
-        users.add(new Client(4, "George", tickets.get(2)));
+        final var users = new ArrayList<User>(Arrays.asList(
+                new Client(2, "Malcolm", tickets.get(0)),
+                new Client( 3, "Linda", tickets.get(1)),
+                new Admin(1, "John"),
+                new Client(4, "George", tickets.get(2))
+        ));
 
 
         System.out.printf("We have %d users right now\n", users.size());
@@ -48,7 +51,5 @@ public class UserTest {
                 }
             }
         }
-
-
     }
 }

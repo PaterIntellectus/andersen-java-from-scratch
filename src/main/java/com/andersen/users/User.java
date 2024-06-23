@@ -1,6 +1,6 @@
-package com.andersen.User;
+package com.andersen.users;
 
-import com.andersen.AbstractEntity.AbstractEntity;
+import com.andersen.core.AbstractEntity;
 
 abstract public class User extends AbstractEntity {
     private String name;

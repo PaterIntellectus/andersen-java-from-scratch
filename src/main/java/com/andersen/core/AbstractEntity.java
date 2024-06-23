@@ -1,4 +1,4 @@
-package com.andersen.AbstractEntity;
+package com.andersen.core;
 
 import java.util.Objects;
 

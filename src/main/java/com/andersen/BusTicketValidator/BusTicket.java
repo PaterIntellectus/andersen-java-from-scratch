@@ -1,23 +1,30 @@
 package com.andersen.BusTicketValidator;
 
 public class BusTicket {
+    private String ticketClass;
 
-    String ticketClass;
+    private String ticketType;
 
-    String ticketType;
+    private String startDate;
 
-    String startDate;
-
-    int price;
+    private int price;
 
 
-    public BusTicket() {
-        this.ticketClass = null;
-        this.ticketType = null;
-        this.startDate = null;
-        this.price = 0;
+    public String getTicketClass() {
+        return ticketClass;
     }
 
+    public String getTicketType() {
+        return ticketType;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 
 
     public void setTicketClass(String ticketClass) {

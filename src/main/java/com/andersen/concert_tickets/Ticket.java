@@ -1,4 +1,4 @@
-package com.andersen.TicketService;
+package com.andersen.concert_tickets;
 
 import com.andersen.AbstractEntity.AbstractEntity;
 import com.andersen.Interfaces.Printable;

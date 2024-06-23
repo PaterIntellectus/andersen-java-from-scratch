@@ -1,6 +1,6 @@
 package com.andersen.User;
 
-import com.andersen.TicketService.Ticket;
+import com.andersen.concert_tickets.Ticket;
 
 public class Client extends User {
     private final Ticket ticket;

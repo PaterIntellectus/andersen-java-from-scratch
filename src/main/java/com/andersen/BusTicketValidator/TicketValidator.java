@@ -20,7 +20,7 @@ enum ViolationType {
 public class TicketValidator {
     private static final Set<String> validTicketTypes = Set.of("DAY","WEEK","MONTH","YEAR");
 
-    private static String ticketTypeWithoutStartDate = "MONTH";
+    private static final String ticketTypeWithoutStartDate = "MONTH";
 
 
     public static void main(String[] args) throws JsonProcessingException {

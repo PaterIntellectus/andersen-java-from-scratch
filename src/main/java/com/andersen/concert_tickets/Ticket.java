@@ -1,8 +1,8 @@
 package com.andersen.concert_tickets;
 
 import com.andersen.AbstractEntity.AbstractEntity;
-import com.andersen.Interfaces.Printable;
-import com.andersen.Interfaces.Shareable;
+import com.andersen.interfaces.Printable;
+import com.andersen.interfaces.Shareable;
 
 import java.sql.Timestamp;
 import java.util.Objects;

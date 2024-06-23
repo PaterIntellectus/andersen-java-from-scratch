@@ -1,4 +1,4 @@
-package com.andersen.interfaces;
+package com.andersen.utils;
 
 public interface Shareable {
     default void share(String phoneNumber) {

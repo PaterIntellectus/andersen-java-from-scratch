@@ -8,8 +8,8 @@ import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 enum ViolationType {
     None, InvalidTicketType,
@@ -18,13 +18,7 @@ enum ViolationType {
 }
 
 public class TicketValidator {
-    private static final HashSet<String> validTicketTypes = new HashSet<>();
-    static {
-        validTicketTypes.add("DAY");
-        validTicketTypes.add("WEEK");
-        validTicketTypes.add("MONTH");
-        validTicketTypes.add("YEAR");
-    };
+    private static final Set<String> validTicketTypes = Set.of("DAY","WEEK","MONTH","YEAR");
 
     private static String ticketTypeWithoutStartDate = "MONTH";
 
@@ -79,19 +73,20 @@ public class TicketValidator {
 
     private static ViolationType validateTicket(final BusTicket ticket) {
         // validate ticketType
-        final var ticketType = ticket.ticketType;
+        final var ticketType = ticket.getTicketType();
         if (ticketType == null || !validTicketTypes.contains(ticketType)) {
             return ViolationType.InvalidTicketType;
         }
 
         // validate startDate
+        final var startDate = ticket.getStartDate();
         if (!ticketTypeWithoutStartDate.equals(ticketType)) {
-            if (ticket.startDate == null) {
+            if (startDate == null) {
                 return ViolationType.MissingStartDate;
             }
 
             try {
-                final var parsedStartDate = LocalDate.parse(ticket.startDate);
+                final var parsedStartDate = LocalDate.parse(startDate);
 
                 if (parsedStartDate.isAfter(LocalDate.now())) {
                     return ViolationType.FutureStartDate;
@@ -102,11 +97,12 @@ public class TicketValidator {
         }
 
         // validate price
-        if (ticket.price == 0) {
+        final var price = ticket.getPrice();
+        if (price == 0) {
             return ViolationType.PriceIsZero;
         }
 
-        if ((ticket.price % 2) != 0) {
+        if ((price % 2) != 0) {
             return ViolationType.PriceIsOdd;
         }
 

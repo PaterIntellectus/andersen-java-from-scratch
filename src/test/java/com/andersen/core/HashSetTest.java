@@ -1,6 +1,5 @@
 package com.andersen.core;
 
-
 public class HashSetTest {
     public static void main(String[] args) {
         final var hs = new HashSet<Integer>();
